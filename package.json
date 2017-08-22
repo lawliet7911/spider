@@ -1,0 +1,19 @@
+{
+  "name": "spider",
+  "version": "1.0.0",
+  "description": "spider",
+  "main": "index.js",
+  "scripts": {
+    "t": "node index.js"
+  },
+  "keywords": [
+    "spider"
+  ],
+  "author": "'lawliet'",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "iconv-lite": "^0.4.18",
+    "request": "^2.81.0"
+  }
+}
