@@ -10,6 +10,7 @@ var index = 1;
 var count = 0;
 var article_links = [];
 
+//获得文章标题和文章链接
 getArticleTitle = (url, startPage, endPage) => {
   try {
     http.get(url + "page/" + startPage, res => {
@@ -50,6 +51,7 @@ getArticleTitle = (url, startPage, endPage) => {
   return article_links;
 };
 
+//讲爬取的数据保存至本地
 var saveToLocal = (filePath, data) => {
   fs.readdir("./", (err, files) => {
     if (err) {
